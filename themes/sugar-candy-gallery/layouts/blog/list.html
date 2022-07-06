@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+    <div class="container py-1" data-aos="fade">
+      <div class="row">
+        <div class="col-lg-7 mx-auto text-center">
+          <h1 class="text-white intro">{{ .Params.title }}</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section" data-aos="fade">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 mx-auto">
+
+            {{ .Content }}
+
+            {{ range where .Pages "Section" "blog" }}
+            <div class="container py-5" data-aos="fade">
+              <div class="row">
+                <div class="col-lg-7 mx-auto text-center">
+                  <h2 class="text-white intro">{{ .Params.title }}</h2>
+                  <p>
+                    <b>{{ .Params.date | time.Format ":date_long"}}</b> - {{ .Params.description }}
+                  </p>
+                  <p>
+                    <a href="{{.Permalink}}" class="btn btn-primary">Read ></a>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+{{ end }}

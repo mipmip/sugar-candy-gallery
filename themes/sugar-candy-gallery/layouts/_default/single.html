@@ -1,0 +1,35 @@
+{{ define "main" }}
+
+<div class="container py-5" data-aos="fade">
+  <div class="row">
+    <div class="col-lg-7 mx-auto text-center">
+      <h1 class="text-white intro">{{ .Params.title }}</h1>
+      {{ .Params.description }}
+      {{/*{{ if .Params.cta }}<p><a href="{{.Params.cta[1]}}" class="btn btn-primary">{{.Params.cta[0]}}</a></p>{{ end }}*/}}
+    </div>
+  </div>
+
+
+  <div class="site-section" data-aos="fade">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 mx-auto">
+          {{ if .Params.image }}
+          <div class="row">
+            <div class="col-lg-6 text-center mx-auto">
+              <img src="{{ .Params.image }}" alt="image" class="img-fluid rounded mb-5 mx-auto">
+            </div>
+          </div>
+          {{ end }}
+
+          {{ .Content }}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+
+
