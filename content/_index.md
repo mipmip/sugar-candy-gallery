@@ -2,17 +2,6 @@
 title: UntreePhoto
 layout: default
 gallery:
-  - images/photo-1-min.jpg
-  - images/photo-2-min.jpg
-  - images/photo-3-min.jpg
-  - images/photo-4-min.jpg
-  - images/photo-5-min.jpg
-  - images/photo-6-min.jpg
-  - images/photo-7-min.jpg
-  - images/photo-8-min.jpg
-  - images/photo-9-min.jpg
-  - images/photo-10-min.jpg
-gallery2:
   - caption: black fifties
     image: ./images/aleks-marinkovic-8GkXyyoedXI-unsplash(1).jpg
     resources: []

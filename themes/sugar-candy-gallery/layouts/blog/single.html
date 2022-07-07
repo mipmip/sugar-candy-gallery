@@ -28,6 +28,20 @@
       </div>
     </div>
   </div>
+
+  <div class="site-section pt-0 pb-0"  data-aos="fade">
+    <div class="container-fluid">
+      <div class="row" id="lightgallery">
+
+        {{ range .Params.gallery }}
+        {{ partial "gallery-item.html" . }}
+        {{ end }}
+
+      </div>
+    </div>
+  </div>
+
+
 </div>
 {{ end }}
 

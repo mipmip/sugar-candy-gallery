@@ -1,6 +1,7 @@
 {{ define "main" }}
 
 <div class="container py-5" data-aos="fade">
+
   <div class="row">
     <div class="col-lg-7 mx-auto text-center">
       <h1 class="text-white intro">{{ .Params.title }}</h1>
@@ -28,6 +29,20 @@
       </div>
     </div>
   </div>
+
+  <div class="site-section pt-0 pb-0"  data-aos="fade">
+    <div class="container-fluid">
+      <div class="row" id="lightgallery">
+
+        {{ range .Params.gallery }}
+        {{ partial "gallery-item.html" . }}
+        {{ end }}
+
+      </div>
+    </div>
+  </div>
+
+
 </div>
 {{ end }}
 

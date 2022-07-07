@@ -12,7 +12,7 @@ params:
     results) and in your feed.xml site description.
   author: John Doe
   instagram: null
-  pinterest: null
+  pinterest: https://twitter.com/quiqrapp
   facebook: null
   twitter: https://twitter.com/quiqrapp
   menu:
