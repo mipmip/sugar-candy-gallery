@@ -1,0 +1,59 @@
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family={{ $.Site.Params.font1}}:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family={{ $.Site.Params.font2 }}:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body
+{
+  font-family: '{{$.Site.Params.font2 }}', sans-serif;
+  background-color: {{ $.Site.Params.color_bg  }};
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  font-family: '{{$.Site.Params.font1 }}', serif;
+}
+
+.site-navbar .site-navigation .site-menu .active > a {
+  color: {{ $.Site.Params.color_text_1a}};
+}
+.site-navbar .site-navigation .site-menu .active > a {
+color: {{$.Site.Params.color_text_1b}};
+}
+
+.site-navbar .site-navigation .site-menu > li > a {
+color: {{$.Site.Params.color_text_1a}};
+}
+.site-navbar .site-navigation .site-menu > li > a:hover {
+color: {{$.Site.Params.color_text_1b}};
+}
+
+a{
+  color: {{ $.Site.Params.color_text_2a  }};
+}
+.btn-primary {
+  background: {{ $.Site.Params.color_text_2a  }};
+  border-color: {{ $.Site.Params.color_text_2a  }};
+}
+a:hover{
+  color: {{ $.Site.Params.color_text_2b  }};
+
+}
+.btn-primary:hover {
+  background: {{ $.Site.Params.color_text_2b  }};
+  border-color: {{ $.Site.Params.color_text_2b  }};
+}
+
+.intro a:hover {
+  color: {{ $.Site.Params.color_text_2a  }};
+}
+
+.intro a::before {
+background: {{ $.Site.Params.color_text_2a  }};
+}
+.intro a::before:hover {
+background: {{ $.Site.Params.color_text_2b  }};
+}
+
+</style>
+

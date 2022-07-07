@@ -1,0 +1,74 @@
+---
+title: Site Config
+description: Site settings, and color and font
+file: config.yaml
+fields:
+  - key: title
+    title: Site Title
+    type: string
+    tip: Your page title. [Read more on hugo hq](https://gohugo.io)
+  - key: baseURL
+    title: Base URL
+    type: string
+
+  - key: languageCode
+    title: Language Code
+    type: string
+
+  - key: params
+    groupdata: true
+    title: Params
+    type: section
+    fields:
+
+      - key: copyright
+        title: Copyright Line
+        type: string
+        tip: supports markdown
+
+      - key: menu
+        title: Menu
+        type: accordion
+        fields:
+        - arrayTitle: true
+          key: name
+          title: Name
+          type: string
+        - key: url
+          title: Url
+          type: string
+
+      - key: "font1"
+        title: "Font Titles"
+        type: "font-picker"
+        limit: 300
+
+      - key: "font2"
+        title: "Font Text"
+        type: "font-picker"
+        limit: 300
+
+      - key: color_text_1a
+        title: Color Text 1A
+        type: color
+        autoSave: true
+
+      - key: color_text_1b
+        title: Color Text 1B
+        type: color
+        autoSave: true
+
+      - key: color_text_2a
+        title: Color Text 2A
+        type: color
+        autoSave: true
+
+      - key: color_text_2b
+        title: Color Text 2B
+        type: color
+        autoSave: true
+
+      - key: color_bg
+        title: Color Background
+        type: color
+ 

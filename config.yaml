@@ -1,23 +1,35 @@
-baseURL: 'http://example.org/'
-languageCode: 'en-us'
-title: 'Sugar Candy Gallery'
-theme: 'sugar-candy-gallery'
+baseURL: http://example.org/
+languageCode: en-us
+title: Sugar Candy Gallery
+theme: sugar-candy-gallery
 params:
-  copyright: "Copyright &copy; 2022 All Rights Reserved. &mdash; Designed with love by [Untree.co](https://untree.co) &bullet; [License](https://untree.co/license)"
-
-  description: >- # this means to ignore newlines until "baseurl:"
-    Write an awesome description for your new site here. You can edit this
-    line in _config.yml. It will appear in your document head meta (for
-    Google search results) and in your feed.xml site description.
+  copyright: >-
+    Copyright &copy; 2022 All Rights Reserved. &mdash; Designed with love by
+    [Untree.co](https://untree.co) &bullet; [License](https://untree.co/license)
+  description: >-
+    Write an awesome description for your new site here. You can edit this line
+    in _config.yml. It will appear in your document head meta (for Google search
+    results) and in your feed.xml site description.
   author: John Doe
-
-  instagram: #
-  pinterest: #
-  facebook: #
+  instagram: null
+  pinterest: null
+  facebook: null
   twitter: https://twitter.com/quiqrapp
-
+  menu:
+    - name: About
+      url: page/about/
+    - name: Contact
+      url: page/contact
+    - name: Other gallery
+      url: page/other
+  font1: Allura
+  font2: Amaranth
+  color_text_1a: '#088C08'
+  color_text_1b: lime
+  color_text_2a: '#C603C6'
+  color_text_2b: '#770277'
+  color_bg: '#434242'
 markup:
   goldmark:
     renderer:
       unsafe: true
-

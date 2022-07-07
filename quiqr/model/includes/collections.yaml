@@ -1,0 +1,77 @@
+- dataformat: yaml
+  description: Pages like about, etc...
+  folder: content/page/
+  itemtitle: Page
+  key: pages
+  title: Pages
+  hideIndex: true
+  includeSubdirs: true
+  extension: md
+  fields:
+    - key: title
+      title: Title
+      type: string
+    - key: mainContent
+      title: Main content
+      type: markdown
+
+    - key: images
+      type: bundle-manager
+      path: ./images
+      extensions:
+        - svg
+        - png
+        - jpeg
+        - jpg
+        - gif
+      fields:
+        - key: thumb
+          title: Thumb
+          type: bundle-image-thumbnail
+
+        
+
+- dataformat: yaml
+  description: Blog posts
+  folder: content/blog
+  itemtitle: Post
+  key: blog
+  title: Blog
+  hideIndex: true
+  extension: md
+  fields:
+
+    - key: title
+      title: Title
+      type: string
+    - key: date
+      title: Date
+      type: date
+    - key: description
+      title: Description
+      type: string
+    - key: categories
+      title: Category
+      type: string
+    - key: tags
+      title: Tags
+      type: chips
+
+    - key: mainContent
+      title: Main content
+      type: markdown
+
+    - key: images
+      type: bundle-manager
+      path: ./images
+      extensions:
+        - svg
+        - png
+        - jpeg
+        - jpg
+        - gif
+      fields:
+        - key: thumb
+          title: Thumb
+          type: bundle-image-thumbnail
+

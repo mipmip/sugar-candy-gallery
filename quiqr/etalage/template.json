@@ -1,0 +1,9 @@
+{
+  "name": "Sugar Candy Gallery",
+  "description": "Hugo Implementation of the UntreePhoto template",
+  "homepage": "https://github.com/mipmip/sugar-candy-gallery",
+  "license": "CC BY 3.0 with additional conditions",
+  "licenseURL": "https://untree.co/license/",
+  "author": "Untree.co",
+  "authorHomepage": "https://untree.co"
+}
