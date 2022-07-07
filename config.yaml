@@ -22,13 +22,13 @@ params:
       url: page/contact
     - name: Other gallery
       url: page/other
-  font1: Allura
-  font2: Amaranth
-  color_text_1a: '#088C08'
-  color_text_1b: lime
-  color_text_2a: '#C603C6'
-  color_text_2b: '#770277'
-  color_bg: '#434242'
+  font1: Cardo
+  font2: Inter
+  color_text_1a: '#777'
+  color_text_1b: '#fff'
+  color_text_2a: '#FF5677'
+  color_text_2b: '#ff3058'
+  color_bg: black
 markup:
   goldmark:
     renderer:

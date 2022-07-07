@@ -21,6 +21,15 @@ fields:
     type: section
     fields:
 
+      - key: instagram
+        type: string
+      - key: pinterest
+        type: string
+      - key: facebook
+        type: string
+      - key: twitter
+        type: string
+
       - key: copyright
         title: Copyright Line
         type: string
